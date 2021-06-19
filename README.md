@@ -15,6 +15,7 @@ Integration tests
 Unit tests
 Google analytics
 Login via Google
+Stripe payment
 Great Docs
 
 24/7 support

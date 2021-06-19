@@ -8,6 +8,7 @@ describe("simple app", () => {
     const server = new ApolloServer({ typeDefs, resolvers });
     const result = await server.executeOperation({
       query: GET_USER,
+      variables: { name: "james" },
     });
     expect(result.errors).toBeUndefined();
     expect(result.data.user.name).toBe("james");

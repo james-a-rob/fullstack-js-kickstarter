@@ -8,7 +8,7 @@
     "test:server": "jest ./src/server --config=jest.server.config.js",
     "test:client": "jest ./src/client",
     "test:e2e": "npx kill-port 3000 && npm run build && npm run start & npm run cypress:run",
-    "cypress:run": "cypress open",
+    "cypress:run": "cypress run",
     "serve": "webpack serve --mode development",
     "build": "webpack --mode production"
   },

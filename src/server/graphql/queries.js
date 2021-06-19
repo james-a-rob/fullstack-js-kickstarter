@@ -2,8 +2,9 @@ const { gql } = require("apollo-server-express");
 
 const queries = {
   GET_USER: gql`
-    query {
-      user {
+    query GetUser($name: String) {
+      user(name: $name) {
+        id
         name
       }
     }
