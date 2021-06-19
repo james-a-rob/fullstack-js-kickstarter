@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server/server.js",
+    "test:server": "jest ./src/server",
     "test:e2e": "npx kill-port 3000 && npm run build && npm run start & npm run cypress:run",
     "cypress:run": "cypress open",
     "serve": "webpack serve --mode development",
@@ -13,7 +14,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "transform": {}
+  },
   "dependencies": {
+    "apollo-server": "^2.25.1",
+    "apollo-server-express": "^2.25.1",
+    "graphql": "^15.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack-dev-server": "^3.11.2"
@@ -27,6 +34,7 @@
     "cypress": "^7.5.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
     "style-loader": "^2.0.0",
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2"
