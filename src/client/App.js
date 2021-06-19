@@ -3,8 +3,7 @@ import React from "react";
 function App() {
   return (
     <div>
-      <h2>Welcome to React App</h2>
-      <h3>Date : {new Date().toDateString()}</h3>
+      <h2>Full Stack JavaScript Starter Kit</h2>
     </div>
   );
 }
