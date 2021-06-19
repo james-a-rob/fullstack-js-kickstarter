@@ -1,7 +1,7 @@
 {
   "name": "js-quick-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boiler plate JavaScript to quickstart projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
