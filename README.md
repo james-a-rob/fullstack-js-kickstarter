@@ -17,7 +17,7 @@ Google analytics
 Login via Google
 Stripe payment
 Great Docs
-
+Walkthrough introduction video
 24/7 support
 
 ### Useful Links
