@@ -5,6 +5,7 @@ Perfect starting point for JS dev building micro saas, weekend hacks, MVPs etc.
 
 ### Features
 
+$10
 Full stack JavaScript
 Graphql API
 Database ORM
@@ -17,8 +18,10 @@ Google analytics
 Login via Google
 Stripe payment
 Great Docs
+Easy Heroku deployment
 Walkthrough introduction video
 24/7 support
+Free updates forever
 
 ### Useful Links
 

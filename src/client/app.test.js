@@ -8,12 +8,12 @@ const mocks = [
     request: {
       query: GET_USER_QUERY,
       variables: {
-        name: "james",
+        firstName: "James",
       },
     },
     result: {
       data: {
-        user: { id: "1", name: "james" },
+        user: { id: "1", firstName: "James" },
       },
     },
   },
@@ -24,7 +24,7 @@ it("renders without error", async () => {
   TestRenderer.act(() => {
     component = TestRenderer.create(
       <MockedProvider mocks={mocks} addTypename={false}>
-        <User name="james" />
+        <User name="James" />
       </MockedProvider>
     );
   });

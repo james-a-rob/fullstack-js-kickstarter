@@ -2,17 +2,17 @@ import React from "react";
 import { gql, useQuery } from "@apollo/client";
 
 export const GET_USER_QUERY = gql`
-  query GetUser($name: String) {
-    user(name: $name) {
+  query GetUser($firstName: String) {
+    user(firstName: $firstName) {
       id
-      name
+      firstName
     }
   }
 `;
 
 function App() {
   const { loading, error, data } = useQuery(GET_USER_QUERY, {
-    variables: { name: "james" },
+    variables: { firstName: "James" },
   });
   if (loading) return <p>Loading...</p>;
 
