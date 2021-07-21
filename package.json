@@ -1,5 +1,5 @@
 {
-  "name": "js-quick-start",
+  "name": "fullstack-js-kickstarter",
   "version": "1.0.0",
   "description": "Boiler plate JavaScript to quickstart projects",
   "main": "index.js",
@@ -7,8 +7,9 @@
     "start": "npx kill-port 3000 && node src/server/server.js",
     "test:server": "jest ./src/server --config=jest.server.config.js",
     "test:client": "jest ./src/client",
-    "test:e2e": "npx kill-port 3000 && npm run build && npm run start & npm run cypress:run",
+    "test:e2e": "npx kill-port 3000 && npm run build && npm run start & npm run cypress:open",
     "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
     "serve": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
