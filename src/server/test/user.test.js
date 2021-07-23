@@ -1,14 +1,14 @@
 const { ApolloServer } = require("apollo-server");
-const typeDefs = require("./graphql/typeDefs");
-const resolvers = require("./graphql/resolvers");
-const { GET_USER } = require("./graphql/queries");
-const db = require("./models");
+const typeDefs = require("../graphql/typeDefs");
+const resolvers = require("../graphql/resolvers");
+const { GET_USER } = require("../graphql/queries");
+const db = require("../models");
 
 beforeAll(async () => {
   await db.sequelize.sync({ force: true });
 });
 
-describe("simple app", () => {
+describe("user", () => {
   it("gets a user", async () => {
     await db.User.create({
       firstName: "James",
