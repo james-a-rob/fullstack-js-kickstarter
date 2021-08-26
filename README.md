@@ -30,4 +30,3 @@ Just Node.js installed
 
 Fork this repo and `npm install` at the root.
 
-1
